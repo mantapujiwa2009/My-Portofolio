@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B); 
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: rgb(182, 71, 37);
+}
+
+nav a {
+  font-size: 3rem;
+  color: white;
+  margin-left: 35rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover, 
+nav a:active {
+  color: rgb(182, 71, 37);
+  border-bottom: 3px solid rgb(182, 71, 37);
+}
+
+@media(max-width:995px){
+ nav{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 40%;
+  border-left: 3px solid rgb(182, 71, 37);
+  border-bottom: 3px solid rgb(182, 71, 37);
+  padding: 1rem solid;
+  background-color: #161616;
+  border-top: 0.1rem solid rgba(0,0,0,0.1);
+ }
+
+
+nav:active {
+  display: block;
+}
+
+nav a{
+  display: block;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+nav a:hover,
+nav a:active {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-bottom: 0.5rem solid rgb(182, 71, 37);
+}
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+
+.TigaD-content h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+} 
+
+.TigaD-work {
+  width: 100%;
+}
+
+.TigaD-work img, iframe {
+  width: 500px;
+  height: 281px;
+  align-items: center;
+  transition: 0.15s linear;
+}
+
